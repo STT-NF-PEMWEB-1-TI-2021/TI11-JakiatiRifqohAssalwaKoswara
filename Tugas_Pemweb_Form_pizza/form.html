@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pizza</title>
+</head>
+<body>
+
+    <fieldset>
+        <form method="POST" action="http://blackgoosebistro.com/pizza.php">
+            <h3>Black Goose Bistro | Pizza-on-Demand</h3>
+            <h4>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll     deliver it within an hour.</h4>
+
+            <legend>Your Information</legend>
+
+            <div>
+                <label for="name">Name : </label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="address">Address : </label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="telephone number">Telephone Number : </label>
+                <input type="number">
+            </div>
+            <div>
+                <label for="email">Email : </label>
+                <input type="email">
+            </div>
+            <div>   
+                <label for="delivery">Delivery Instructions : </label> <br>
+                <textarea name="text" id="input-Delivery-instruction"cols="30"rown="3"maxlengt="400"placeholder="No more than 400 leght"></textarea>
+            </div>
+
+        <fieldset>
+            <div>
+                <h3><b u>Design Your Dream Pizza</b></h3>
+                <p>Pizza specs</p>
+            </div>
+        <fieldset>
+        <legend>Crust <choose one>:</legend>
+        
+            <div>
+                <input name="crust" id="input Classic white"type="radio">
+                <label for="input-Classic-white">Classic white</label>
+            </div>
+            <div>
+                <input name="crust" id="input Multigrain"type="radio">
+                <label for="input-Multigrain">Multigrain</label>
+            </div>
+            <div>
+                <input name="crust" id="input Cheese-stuffed-crust"type="radio">
+                <label for="input-Cheese-stuffed-crust">Cheese-stuffed-crust</label>
+            </div>
+            <div>
+                <input name="crust" id="input Gluten-free"type="radio">
+                <label for="input-Gluten-free">Gluten-free</label>
+            </div>
+        </fieldset> 
+        <fieldset>
+            <legend>Toppings <Choose as many as you want>:</Choose></legend>
+            <div>
+                <input name="Toppings" id="input Red sauce"type="radio">
+                <label for="input-Red-sauce">Red sauce</label>
+            </div>
+            <div>
+                <input name="Toppings" id="input White sauce"type="radio">
+                <label for="input-White-sauce">White sauce</label>
+            </div>
+            <div>
+                <input name="Toppings" id="input Mozzarella Cheese"type="radio">
+                <label for="input-Mozzarella-Cheese">Mozzarella Cheese</label>
+            </div>
+            <div>
+                <input name="Toppings" id="input Pepperoni"type="radio">
+                <label for="input-Pepperoni">Pepperoni</label>
+            </div>
+            <div>
+                <input name="Toppings" id="input Mushrooms"type="radio">
+                <label for="input-Mushrooms">Mushrooms</label>
+            </div>
+            <div>
+                <input name="Toppings" id="input Peppers"type="radio">
+                <label for="input-Peppers">Peppers</label>
+            </div>
+            <div>
+                <input name="Toppings" id="input Anchovies"type="radio">
+                <label for="input-Anchovies">Anchovies</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Number</legend>
+            <div>
+                <label for="How-many-pizzas"></label>
+                <select id="How-many-pizzas">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                </select>
+            </div>
+        </fieldset>
+        </div>
+
+        <input type="submit"value="Bring me a pizza!">
+        <input type="reset"value="reset">
+    </form> 
+    
+    
+</body>
+</html>
