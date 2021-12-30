@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<body>
+    <style>
+        label {
+            width: 200px auto;
+        }
+    </style>
+    <label for="gunung">Gunung</label>
+    <select id="gunung">
+        <option value="Gede Pangrango">Gede Pangrango</option>
+        <option value="Rinjani">Rinjani</option>
+        <option value="Prau">Prau</option>
+        <option value="Latimojong">Latimojong</option>
+        <option value="Ciremai">Ciremai</option>
+
+    </select>
+    <button onclick="cetakGambar()">Cetak Gambar</button>
+    
+    <img id="gambar" src="">
+
+    <script>
+        
+        function cetakGambar() {
+            const gunung = document.getElementById("gunung");
+            const gambar = document.getElementById("gambar");
+
+            if (gunung.value === "Gede Pangrango") {
+                gambar.src = "https://foresteract.com/wp-content/uploads/2017/11/Taman-Nasional-Gunung-Gede-Pangrango.jpg"
+            }
+
+            if (gunung.value === "Rinjani") {
+                gambar.src = "http://www.trekkingrinjani.com/images/mt-rinjani3.jpg"
+            }
+            if (gunung.value === "Prau") {
+                gambar.src = "https://img.okezone.com/content/2021/11/22/512/2505675/3-fakta-gunung-prau-pintu-ke-alam-gaib-hingga-persemayaman-dewa-jz5Ud6U5Ma.jpg"
+            }
+            if (gunung.value === "Latimojong") {
+                gambar.src = "https://www.tripjalanjalan.com/wp-content/uploads/2016/08/gunung-latimojong-sulawesi.jpg"
+            }
+            if (gunung.value === "Ciremai") {
+                gambar.src = "https://triptofun.id/wp-content/uploads/2021/08/gunung_ciremai_jawa_barat_banabukari.jpg"
+            }
+        }
+
+        
+    </script>
+</body>
+</html>

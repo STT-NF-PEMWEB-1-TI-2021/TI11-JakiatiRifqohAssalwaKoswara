@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Message</title>
+    <style>
+        body{
+            background-color:forestgreen;
+
+        }
+        h1 {
+            margin: 50px 50px 5px;
+            color: black;
+            margin-left: 600px;
+        }
+        .result-chat {
+            position: fixed;
+            left: 30%;
+            border-radius: 8px;
+            background: #fff;
+            width: 400px;
+            margin: 50px 50px 10px auto;
+            padding: 200px 70px;
+            display: block;
+            border: 1px solid black; 
+        }
+        .input-chat {
+            height: 30px;
+            margin-left: 50px ;
+            position: fixed;
+            left: 30%;
+            border-radius: 8px;
+            background: #fff;
+            width: 350px;
+            margin: 470px auto;
+            padding: 20px 40px;
+            border: 1px solid black;
+        }
+        .btn-chat {
+            position: fixed;
+            left: 30%;
+            border-radius: 8px;
+            background: orangered;
+            width: 100px;
+            margin: 470px auto;
+            padding: 28px 40px;
+            display: inline-block;
+            text-align: center;
+            border: 1px solid black; 
+            margin-left: 443px;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Chat Box</h1>
+        <div class="result-chat"></div>
+        <div>
+            <input type="text" placeholder="Input text here" class="input-chat" size="33">
+            <button class="btn-chat">Kirim</button>
+        </div>
+    </main>
+    <script>
+        let resultChat = document.querySelector(".result-chat");
+        const inputChat = document.querySelector(".input-chat");
+        const btnChat = document.querySelector(".btn-chat");
+        btnChat.addEventListener("click", function() {
+            resultChat.innerHTML = resultChat.innerHTML + "<br>" + "You :" + inputChat.value;
+            inputChat.value = "";
+        })
+    </script>
+</body>
+</html>
